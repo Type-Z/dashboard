@@ -23,7 +23,8 @@ def camstar(df1):
     df1['LAMINATION_TIME'] = pd.to_datetime(df1['LAMINATION_TIME'])
     # convert str to datetime type
     
-    df = df1[df1['LAMINATION_TIME']>=(dt.datetime.now()-dt.timedelta(hours = 20000))]
+
+    df = df1[df1['LAMINATION_TIME']>=(dt.datetime.now()-dt.timedelta(hours = 12))]# time interval
     # select data from last 12 hours
     
     df.dropna(subset=['DEFECT_REASONS'], how='all', inplace=True)
@@ -44,7 +45,7 @@ def network_drive(df2):
     # convert str to datetime type
     
     #################### edit time here
-    df = df2[df2['LAMINATION_TIME']>=(dt.datetime.now()-dt.timedelta(hours = 12000))]
+    df = df2[df2['LAMINATION_TIME']>=(dt.datetime.now()-dt.timedelta(hours = 12))]# time interval
     # select data from last 12 hours
     
     df.dropna(subset=['DEFECT_REASONS'], how='all', inplace=True)

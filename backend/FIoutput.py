@@ -7,11 +7,11 @@ now_6hours = datetime.datetime.now() - datetime.timedelta(hours=6)
 dt_yesterday = now_6hours - datetime.timedelta(days=1)
 month = dt_yesterday.strftime("%B")
 ####################################
-month = 'June'
+# month = 'June'
 # Edit File
 path = data_prefix.prefix + 'Production Report '+ month +'.xlsx'
-sheet_month = month+ ' Daily Data'
-sheet_week_month = month+' Weekly-Monthly Data'
+sheet_month = 'Daily Data'
+sheet_week_month = 'Weekly-Monthly Data'
 df_month = pd.read_excel(path, sheet_name=sheet_month)
 df_week_month = pd.read_excel(path, sheet_name=sheet_week_month)
 

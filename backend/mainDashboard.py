@@ -7,7 +7,7 @@ import data_prefix
 # function to get the last 2 hour time frame
 def get_time():
     now = datetime.datetime.now()
-    now = datetime.datetime(2022, 7, 1, 22, 0)
+    # now = datetime.datetime(2022, 7, 1, 22, 0)
     #now = datetime.datetime(2022, 6, 22, 9, 30)### test data
     start = now - datetime.timedelta(hours = 2)
     hour = start.hour

@@ -33,7 +33,7 @@ const Lamination = () => {
 
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <Header category="Page" title="Lamination" />
+      <Header category="Page" title="Lamination in past 12 hours" />
       <GridComponent
         dataSource={lamination}
         enableHover={false}
