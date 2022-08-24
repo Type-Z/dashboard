@@ -21,6 +21,7 @@ There are two data folder.
 
 ## APIs
 - Backend APIs are stored in base.py
+- The frontend request data using axios. To make the program easier to edit, all the axios operations are integrated in the according frontend pages.
 
 # How to run the appilication
 
