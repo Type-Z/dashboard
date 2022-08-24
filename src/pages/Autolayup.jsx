@@ -4,6 +4,7 @@ import reworkPic from '../data/rework.jpg';
 import { Header } from '../components';
 
 const Autolayup = () => {
+  // eslint-disable-next-line no-unused-vars
   const toolbarOptions = ['Search'];
 
   return (
