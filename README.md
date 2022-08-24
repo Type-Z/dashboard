@@ -9,6 +9,7 @@ There are two data folder.
 - src/data 
 - is for the pics rendering directly in the frontend and the dummy data when the backend data is not successfully loaded.
 - Since the tables in Tables/Autolayup in the sidebar is complex, it is easier to just render the pic. If new elements is needed to be added to the dashboard in the future, I suggest to use this way too. Set the pic generating as a scheduled task and save the pic in the src/data folder (Everytime we generate pic, use the same name so it will replace the former pic), render it in the frontend so we don't need to write new APIs in the backend.
+- The data in dummy.js is set to repetitive data, so it's easy to figure out if the data was not succesfully sent from the backend.
 #### 2.
 - backend/data 
 - contains four excel file. 
@@ -21,6 +22,7 @@ There are two data folder.
 
 ## APIs
 - Backend APIs are stored in base.py
+- The frontend request data using axios. To make the program easier to edit, all the axios operations are integrated in the according frontend pages.
 
 # How to run the appilication
 
