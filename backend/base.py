@@ -67,7 +67,6 @@ def FI_stack():
 @api.route('/ALDailyPie')
 def AL_Daily_Pie():
     res = DailyAL.DailyALPie()
-    print(res)
     return res
 
 @api.route('/ALDailyStack')
@@ -85,5 +84,4 @@ def lamination_data():
 @api.route('/reorder')
 def reorder_data():
     res = reorder.read_reorder()
-    print(res)
     return res
